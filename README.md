@@ -1,10 +1,17 @@
-# Welcome to your Expo app 👋
+# Social Media App 📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a social media application built using [Expo](https://expo.dev) and React Native. The app includes features like a tab-based navigation system, stories, posts, and user profiles. It is designed to run on Android, iOS, and the web.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Tab Navigation**: Navigate between Home, Search, New Post, Notifications, and Profile tabs.
+- **Stories**: Display user stories in a horizontal scrollable view.
+- **Posts**: View user posts with captions, likes, and comments.
+- **Responsive Design**: Optimized for mobile and web platforms.
+
+## Get Started
+
+1. **Install dependencies**:
 
    ```bash
    npm install
@@ -16,35 +23,23 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+# Project Structure
+.
+├── app/
+│   ├── _layout.tsx          # Main layout for the app
+│   ├── old.tsx              # Legacy code (optional)
+│   ├── (tabs)/              # Tab-based navigation screens
+│       ├── _layout.tsx      # Tab layout configuration
+│       ├── index.tsx        # Home screen
+│       ├── search.tsx       # Search screen
+│       ├── new-post.tsx     # New Post screen
+│       ├── notifications.tsx # Notifications screen
+│       ├── profile.tsx      # Profile screen
+├── assets/                  # Static assets (images, fonts, etc.)
+├── .expo/                   # Expo-specific configurations
+├── .vscode/                 # VS Code settings
+├── package.json             # Project dependencies and scripts
+├── tsconfig.json            # TypeScript configuration
+└── README.md                # Project documentation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
